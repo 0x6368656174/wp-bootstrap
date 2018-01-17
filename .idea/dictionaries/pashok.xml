@@ -2,6 +2,7 @@
   <dictionary name="pashok">
     <words>
       <w>autoprefixer</w>
+      <w>babelify</w>
       <w>browserify</w>
       <w>dropin</w>
       <w>johnpbloch</w>

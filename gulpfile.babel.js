@@ -17,7 +17,7 @@ const cssDist = './wp-content/themes/project-theme/css/';
 // JS
 const jsPath = './wp-content/themes/project-theme/src/js/';
 gulp.task('js:clean', () => {
-    return del(jsDist);
+    return del(`${jsDist}/js-bundle.js`);
 });
 gulp.task('js', ['js:clean'], () => {
     return browserify({
@@ -43,7 +43,7 @@ gulp.task('js:watch', () => {
 // TS
 const tsPath = './wp-content/themes/project-theme/src/ts/';
 gulp.task('ts:clean', () => {
-    return del(tsDist);
+    return del(`${jsDist}/ts-bundle.js`);
 });
 gulp.task('ts', ['ts:clean'], () => {
     return browserify({
