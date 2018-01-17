@@ -1,0 +1,8 @@
+/*
+Theme Name: Project Theme
+Author: Pavel Puchkov <0x6368656174@gmail.com>
+Author URI: http://github.com/0x6368656174
+Description: This is custom project theme. Created special for this site. This theme use Twig with twig-library WP plugin for templates, SCSS as CSS preprocessor and ES2015 with babel for JS. SCSS and ES2015 build with Gulp.
+Version: 1.0
+Text Domain: project-theme
+*/

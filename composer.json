@@ -1,0 +1,49 @@
+{
+  "name": "0x6368656174/wp-bootstrap",
+  "type": "project",
+  "description": "WordPress bootstrap with Russian translation, Twig, SCSS and ES2015 support",
+  "homepage": "http://github.com/0x6368656174/wp-bootstrap",
+  "authors": [
+    {
+      "name": "Pavel Puchkov",
+      "email": "0x6368656174@gmail.com",
+      "homepage": "https://github.com/0x6368656174"
+    }
+  ],
+  "keywords": [
+    "wordpress", "twig", "scss", "gulp", "es2015"
+  ],
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://wp-languages.github.io"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "koodimonni/composer-dropin-installer": "*",
+    "johnpbloch/wordpress": "*",
+    "koodimonni-language/core-ru_ru": "*",
+    "wpackagist-plugin/timber-library": "*"
+  },
+  "extra": {
+    "installer-paths": {
+      "wp-content/mu-plugins/{$name}/": ["type:wordpress-plugin"],
+      "wp-content/themes/{$name}": ["type:wordpress-theme"]
+    },
+    "dropin-paths": {
+      "wp-content/mu-plugins/": ["type:wordpress-muplugin"],
+      "wp-content/languages/": ["type:wordpress-language"],
+      "wp-content/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+      "wp-content/languages/themes/": ["vendor:koodimonni-theme-language"]
+    },
+    "wordpress-install-dir": "wordpress"
+  }
+}
