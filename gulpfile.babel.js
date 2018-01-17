@@ -23,7 +23,7 @@ gulp.task('js', ['js:clean'], () => {
     return browserify({
         basedir: '.',
         debug: true,
-        entries: [`${jsPath}/main.js`]
+        entries: [`${jsPath}/bundle.js`]
     })
         .transform('babelify', {
             presets: ['env']
@@ -49,7 +49,7 @@ gulp.task('ts', ['ts:clean'], () => {
     return browserify({
         basedir: '.',
         debug: true,
-        entries: [`${tsPath}/main.ts`]
+        entries: [`${tsPath}/bundle.ts`]
     })
         .plugin(tsify)
         .transform('babelify', {
