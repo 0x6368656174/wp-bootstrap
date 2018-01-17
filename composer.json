@@ -31,7 +31,7 @@
     "koodimonni/composer-dropin-installer": "*",
     "johnpbloch/wordpress": "*",
     "koodimonni-language/core-ru_ru": "*",
-    "wpackagist-plugin/timber-library": "*"
+    "timber/timber": "^1.6"
   },
   "extra": {
     "installer-paths": {

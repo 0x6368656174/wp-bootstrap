@@ -2,29 +2,47 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/vendor/altorouter/altorouter" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/asm89/twig-cache-extension" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/johnpbloch/wordpress" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/johnpbloch/wordpress-core-installer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/koodimonni-language/core-ru_ru" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/koodimonni/composer-dropin-installer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/timber/timber" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twig/twig" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/upstatement/routes" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="PHP" type="php">
         <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/altorouter/altorouter" />
+          <root url="file://$MODULE_DIR$/vendor/asm89/twig-cache-extension" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/johnpbloch/wordpress" />
           <root url="file://$MODULE_DIR$/vendor/johnpbloch/wordpress-core-installer" />
           <root url="file://$MODULE_DIR$/vendor/koodimonni-language/core-ru_ru" />
           <root url="file://$MODULE_DIR$/vendor/koodimonni/composer-dropin-installer" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/vendor/timber/timber" />
+          <root url="file://$MODULE_DIR$/vendor/twig/twig" />
+          <root url="file://$MODULE_DIR$/vendor/upstatement/routes" />
         </CLASSES>
         <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/altorouter/altorouter" />
+          <root url="file://$MODULE_DIR$/vendor/asm89/twig-cache-extension" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/johnpbloch/wordpress" />
           <root url="file://$MODULE_DIR$/vendor/johnpbloch/wordpress-core-installer" />
           <root url="file://$MODULE_DIR$/vendor/koodimonni-language/core-ru_ru" />
           <root url="file://$MODULE_DIR$/vendor/koodimonni/composer-dropin-installer" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/vendor/timber/timber" />
+          <root url="file://$MODULE_DIR$/vendor/twig/twig" />
+          <root url="file://$MODULE_DIR$/vendor/upstatement/routes" />
         </SOURCES>
       </library>
     </orderEntry>

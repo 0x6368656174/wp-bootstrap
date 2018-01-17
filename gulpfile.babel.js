@@ -11,13 +11,12 @@ import uglify from 'gulp-uglify';
 import sourcemaps from 'gulp-sourcemaps';
 import buffer from 'vinyl-buffer';
 
-const jsDist = './wp-content/themes/project-theme/js/';
-const cssDist = './wp-content/themes/project-theme/css/';
+const dist = './wp-content/themes/project-theme/dist';
 
 // JS
 const jsPath = './wp-content/themes/project-theme/src/js/';
 gulp.task('js:clean', () => {
-    return del(`${jsDist}/js-bundle.js`);
+    return del(`${dist}/js-bundle.js`);
 });
 gulp.task('js', ['js:clean'], () => {
     return browserify({
@@ -34,7 +33,7 @@ gulp.task('js', ['js:clean'], () => {
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(jsDist));
+        .pipe(gulp.dest(dist));
 });
 gulp.task('js:watch', () => {
     gulp.watch([jsPath], ['js']);
@@ -43,7 +42,7 @@ gulp.task('js:watch', () => {
 // TS
 const tsPath = './wp-content/themes/project-theme/src/ts/';
 gulp.task('ts:clean', () => {
-    return del(`${jsDist}/ts-bundle.js`);
+    return del(`${dist}/ts-bundle.js`);
 });
 gulp.task('ts', ['ts:clean'], () => {
     return browserify({
@@ -62,7 +61,7 @@ gulp.task('ts', ['ts:clean'], () => {
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(jsDist));
+        .pipe(gulp.dest(dist));
 });
 gulp.task('ts:watch', () => {
     gulp.watch([tsPath], ['ts']);
@@ -71,7 +70,7 @@ gulp.task('ts:watch', () => {
 // SCC
 const scssPath = './wp-content/themes/project-theme/src/scss/**/*.scss';
 gulp.task('scss:clean', () => {
-    return del(cssDist);
+    return del(`${dist}/bundle.css`);
 });
 gulp.task('scss', ['scss:clean'], () => {
     return gulp.src(scssPath)
@@ -79,7 +78,7 @@ gulp.task('scss', ['scss:clean'], () => {
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(cssDist));
+        .pipe(gulp.dest(dist));
 });
 gulp.task('scss:watch', () => {
     gulp.watch([scssPath], ['sass']);

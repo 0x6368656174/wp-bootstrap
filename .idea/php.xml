@@ -7,6 +7,12 @@
       <path value="$PROJECT_DIR$/vendor/koodimonni/composer-dropin-installer" />
       <path value="$PROJECT_DIR$/vendor/johnpbloch/wordpress-core-installer" />
       <path value="$PROJECT_DIR$/vendor/koodimonni-language/core-ru_ru" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/upstatement/routes" />
+      <path value="$PROJECT_DIR$/vendor/altorouter/altorouter" />
+      <path value="$PROJECT_DIR$/vendor/asm89/twig-cache-extension" />
+      <path value="$PROJECT_DIR$/vendor/timber/timber" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.3.0" />
